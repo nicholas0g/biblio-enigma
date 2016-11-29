@@ -1,5 +1,5 @@
 # Biblio-Enigma
-This repo contain the project for " Linguaggi e tecnologie per il Web" - Sapienza Univ. of Rome ay2016/2017
+This repo contains the project for " Linguaggi e tecnologie per il Web" - Sapienza Univ. of Rome ay2016/2017
 
 ENGLISH
 Specs:
