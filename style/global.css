@@ -1,1 +1,50 @@
 /* Questo file contiene gli stili grafici generali del sito */
+
+/*Body*/
+body {
+    background-color: rgb(128,35,50);
+  }
+/*Titolo*/
+  h1 {
+      color: black;
+      text-align: center;
+      font-family: arial;
+      font-size: 120%;
+      background-color: white;
+  }
+
+/*riquadro bianco entro il quale mettere il testo*/
+div {
+
+      background-color: white;
+      width: 50%;
+      margin: 0 auto;
+    }
+
+
+/*Paragrafi*/
+p {
+    text-align: center;
+    font-family: arial;
+    font-size: 100%;
+}
+
+/* Link */
+a:link {
+    color: red;
+}
+
+/* Se il link è già stato visitato */
+a:visited {
+    color: rgb(128,35,50);
+}
+
+/* al passaggio del mouse */
+a:hover {
+    color: rgb(128,35,50);
+}
+
+/* Alla selezione, click del mouse */
+a:active {
+    color: blue;
+}
