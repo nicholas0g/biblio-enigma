@@ -1,0 +1,47 @@
+{
+   "NomeBiblioteca1" : {
+    "id":0,
+    "via" : "edificio di chimica quarto piano",
+	  "wifi" : "true",
+	  "postazioni-pc" : 10,
+	  "postazioni-studio": 100,
+    "noleggio" : "true",
+    "h24" : "true"
+   },
+   "NomeBiblioteca2" : {
+    "id":1,
+    "via" : "edificio di chimica quarto piano",
+	  "wifi" : "true",
+	  "postazioni-pc" : 10,
+	  "postazioni-studio": 100,
+    "noleggio" : "true",
+    "h24" : "true"
+   },
+   "NomeBiblioteca3" : {
+    "id":2,
+    "via" : "edificio di chimica quarto piano",
+	  "wifi" : "true",
+	  "postazioni-pc" : 10,
+	  "postazioni-studio": 100,
+    "noleggio" : "true",
+    "h24" : "true"
+   },
+   "NomeBiblioteca4" : {
+    "id":3,
+    "via" : "edificio di chimica quarto piano",
+	  "wifi" : "true",
+	  "postazioni-pc" : 10,
+	  "postazioni-studio": 100,
+    "noleggio" : "true",
+    "h24" : "true"
+   },
+   "NomeBiblioteca5" : {
+    "id":4,
+    "via" : "edificio di chimica quarto piano",
+	  "wifi" : "true",
+	  "postazioni-pc" : 10
+	  "postazioni-studio": 100
+    "noleggio" : "true",
+    "h24" : "true"
+   }
+}
