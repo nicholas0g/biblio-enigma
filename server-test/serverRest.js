@@ -22,7 +22,6 @@ app.get('/:id', function (req, res) {
 app.get('/', function (req, res) {
        console.log('Richiesta GET vuota');
        res.end( ':D - greetings from www.nichoalsgiordano.it');
-   });
 })
 
 var server = app.listen(8081, function () {
