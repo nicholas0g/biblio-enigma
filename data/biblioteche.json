@@ -39,8 +39,8 @@
     "id":4,
     "via" : "edificio di chimica quarto piano",
 	  "wifi" : "true",
-	  "postazioni-pc" : 10
-	  "postazioni-studio": 100
+	  "postazioni-pc" : 10,
+	  "postazioni-studio": 100,
     "noleggio" : "true",
     "h24" : "true"
    }
