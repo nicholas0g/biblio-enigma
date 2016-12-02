@@ -14,7 +14,7 @@ app.get('/:id', function (req, res) {
    fs.readFile( __dirname + "/" + "biblioteche.json", 'utf8', function (err, data) {
        biblioteche = JSON.parse( data );
        var biblioteca = biblioteche["biblioteca" + req.params.id] 
-       console.log('Richiesta GET su biblioteca con id %s',id);
+       console.log('Richiesta GET su biblioteca con id %s',req.params.id);
        res.end( JSON.stringify(biblioteca));
    });
 })
