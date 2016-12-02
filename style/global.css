@@ -11,6 +11,8 @@ body {
       font-family: arial;
       font-size: 120%;
       background-color: white;
+      width: 50%;
+      margin: 0 auto;
   }
 
 /*riquadro bianco entro il quale mettere il testo*/
