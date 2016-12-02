@@ -1,0 +1,32 @@
+{
+   "biblioteca1" : {
+    "ultimo-aggiornamento":"22 Dicemre 2016 ore 10",
+    "posti-occupati" : 0,
+	  "stato" : "Normale",
+	  "id": 1
+   },
+   "biblioteca2" : {
+    "ultimo-aggiornamento":"22 Dicemre 2016 ore 10",
+    "posti-occupati" : 0,
+	  "stato" : "Normale",
+	  "id": 2
+   },
+   "biblioteca3" : {
+    "ultimo-aggiornamento":"22 Dicemre 2016 ore 10",
+    "posti-occupati" : 0,
+	  "stato" : "Normale",
+	  "id": 3
+   },
+   "biblioteca4" : {
+    "ultimo-aggiornamento":"22 Dicemre 2016 ore 10",
+    "posti-occupati" : 0,
+	  "stato" : "Normale",
+	  "id": 4
+   },
+   "biblioteca5" : {
+    "ultimo-aggiornamento":"22 Dicemre 2016 ore 10",
+    "posti-occupati" : 0,
+	  "stato" : "Normale",
+	  "id": 5
+   }
+}
