@@ -1,14 +1,6 @@
 {
-   "NomeBiblioteca1" : {
-    "id":0,
-    "via" : "edificio di chimica quarto piano",
-	  "wifi" : "true",
-	  "postazioni-pc" : 10,
-	  "postazioni-studio": 100,
-    "noleggio" : "true",
-    "h24" : "true"
-   },
-   "NomeBiblioteca2" : {
+   "biblioteca1" : {
+    "nome":"biblioteca di geologia",
     "id":1,
     "via" : "edificio di chimica quarto piano",
 	  "wifi" : "true",
@@ -17,7 +9,8 @@
     "noleggio" : "true",
     "h24" : "true"
    },
-   "NomeBiblioteca3" : {
+   "biblioteca2" : {
+	   "nome":"biblioteca di geologia",
     "id":2,
     "via" : "edificio di chimica quarto piano",
 	  "wifi" : "true",
@@ -26,7 +19,8 @@
     "noleggio" : "true",
     "h24" : "true"
    },
-   "NomeBiblioteca4" : {
+   "biblioteca3" : {
+	   "nome":"biblioteca di geologia",
     "id":3,
     "via" : "edificio di chimica quarto piano",
 	  "wifi" : "true",
@@ -35,8 +29,18 @@
     "noleggio" : "true",
     "h24" : "true"
    },
-   "NomeBiblioteca5" : {
+   "biblioteca4" : {
+	   "nome":"biblioteca di geologia",
     "id":4,
+    "via" : "edificio di chimica quarto piano",
+	  "wifi" : "true",
+	  "postazioni-pc" : 10,
+	  "postazioni-studio": 100,
+    "noleggio" : "true",
+    "h24" : "true"
+   },
+   "biblioteca5" : {
+    "id":5,
     "via" : "edificio di chimica quarto piano",
 	  "wifi" : "true",
 	  "postazioni-pc" : 10,
