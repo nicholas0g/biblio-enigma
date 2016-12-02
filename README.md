@@ -32,8 +32,6 @@ delle biblioteche della Sapienza.
 
 
 Front-end:
-
-
 La home del sito web conterrà un elenco / visuale di tutte le biblioteche della sapienza e del relativo numero di posti disponibili in quel momento. Tale numero viene ottenuto mediante una chiamata API REST ( una GET nella fattispecie) al server centrale .
 
 
@@ -45,7 +43,14 @@ Descrizione di libri presenti e disponibili per la consultazione
 Collegamento e modi di arrivare (minimappa google ?)
 
 
-Se qualche studente volesse avere a scopo di studio statistico o di qualsiasi altro genere i dati settimanali/mensili del sito , può richiedere in una pagina dedicata e mediante un’apposita form contenente nome, cognome, matricola e email istituzionale e una casella di spunta di una “dichiarazione di uso non commerciale dei dati” (leggibile per intero tramite link a pagina dedicata).
+Se qualche studente volesse avere a scopo di studio statistico o di qualsiasi altro genere la disponibilità di avere le API dell'infrastruttura del servizio , può richiedere in una pagina dedicata e mediante un’apposita form contenente nome, cognome, matricola, email istituzionale e una casella di spunta di una “dichiarazione di uso non commerciale dei dati” (leggibile per intero tramite link a pagina dedicata) una chiave personale da utilizare per le chiamate REST al servizio esposto in questo progetto.
 
+In un qualsiasi momento sarà inoltre posibile accedere alla lista delle ultime richieste/ricerche fatte con relativi risultati (in modo tale da controllare eventuali modifiche/aggiornamenti dello status delle biblioteche) mediante un sistema noSQL di LocalStorage.
 
-Il progetto impiega le seguenti tecnologie: HTML5, JavaScript, CSS3, JQuery.
+Back-end:
+Sarà inoltre disponibile un'area visuale raggiungibile tramite web che permetterà ad uno o più ipotetici amministratori di segnalare eventuali studenti in entrata o uscita dalle biblioteche in modo tale da aggiornare eventuali posti disponibili.
+In futuro si immagina di automatizzare il processo di ingreso/uscita dalle biblioteche.
+
+L'insieme dei dati viene sempre rilasciato sotto forma di JSON che viene poi elaborato. Le API per cui un qualsiasi studente può fare richiesta rilasciano oggetti di tipo JSON.
+
+Il progetto lato client impiega le seguenti tecnologie: HTML5, JavaScript, CSS3, JSON.
