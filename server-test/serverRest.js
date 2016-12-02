@@ -5,7 +5,7 @@ var fs = require("fs");
 //questa funzione get restituisce la lista totale delle biblioteche
 app.get('/listaBiblioteche', function (req, res) {
    fs.readFile( __dirname + "/" + "biblioteche.json", 'utf8', function (err, data) {
-       console.log( data );
+       console.log('Richiesta GET generica');
        res.end( data );
    });
 })
@@ -14,7 +14,7 @@ app.get('/:id', function (req, res) {
    fs.readFile( __dirname + "/" + "biblioteche.json", 'utf8', function (err, data) {
        biblioteche = JSON.parse( data );
        var biblioteca = biblioteche["biblioteca" + req.params.id] 
-       console.log( biblioteca );
+       console.log('Richiesta GET su biblioteca con id %d',id);
        res.end( JSON.stringify(biblioteca));
    });
 })
