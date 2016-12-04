@@ -27,7 +27,7 @@
 	  "postazioni-pc" : 7,
 	  "postazioni-studio": 120,
     "noleggio" : "true",
-    "h24" : "true"
+    "h24" : "false"
    },
    "biblioteca4" : {
 	   "nome":"biblioteca di giurisprudenza",
@@ -40,7 +40,7 @@
     "h24" : "true"
    },
    "biblioteca5" : {
-	    "nome":"biblioteca di giurisprudenza",
+	    "nome":"biblioteca di fisica",
     "id":5,
     "Edificio" : "Fisica pian terreno",
 	  "wifi" : "false",
