@@ -19,7 +19,7 @@ it can take on a dedicated page and through a specific form containing name, reg
 and he must click on a checkbox to a "declaration of non-commercial use of data" (read in full through a dedicated page link).
 
 
-This part of the project will use: HTML5, JavaScript, CSS3 and JQuery.
+This part of the project will use: HTML5, JavaScript, CSS3, JSON,JQuery.
 
 Back-end:
 TTD
@@ -53,4 +53,4 @@ In futuro si immagina di automatizzare il processo di ingreso/uscita dalle bibli
 
 L'insieme dei dati viene sempre rilasciato sotto forma di JSON che viene poi elaborato. Le API per cui un qualsiasi studente può fare richiesta rilasciano oggetti di tipo JSON.
 
-Il progetto lato client impiega le seguenti tecnologie: HTML5, JavaScript, CSS3, JSON.
+Il progetto lato client impiega le seguenti tecnologie: HTML5, JavaScript, CSS3, JSON,JQuery.
