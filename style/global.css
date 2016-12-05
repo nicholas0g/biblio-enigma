@@ -6,7 +6,7 @@ body {
   }
 /*Titolo*/
   h1 {
-      color: black;
+      color: white;
       text-align: center;
       font-family: arial;
       font-size: 120%;
@@ -29,6 +29,14 @@ p {
     text-align: center;
     font-family: arial;
     font-size: 100%;
+    color:white;
+}
+/*celle di tabella*/
+td {
+    text-align:left;
+    font-family: arial;
+    font-size: 100%;
+    color:white;
 }
 
 /* Link */

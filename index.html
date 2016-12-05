@@ -27,10 +27,42 @@
 
 <head>
 	<title>Biblio Enigma</title>
+    <link href="style/global.css" rel="stylesheet" type="text/css">
+    <script src="js/jquery-3.1.1.min.js"></script> 
+    <!--
+        non viene specificato il tipo di script, in HTML5 javascript è il
+        linguaggio di scripting ufficiale!
+        -->
 </head>
 
 <body>
-	<b> Qui sarà progettata e strutturata la prima pagina del progetto<b> :D
+    <script>
+    $(function(){ //JQery imprementa questo metodo come document.ready()
+        $.getJSON("https://localhost:8081/listaBiblioteche", function(result){
+        $.each(result, function(i, field){
+            $("div").append(field + " ");
+        });
+    });
+    });
+    </script>
+	<table>
+        <tr>
+            <td><n1>Biblioteca uno<n1></td><td><v1>Via</v1></td><td><p1></p1></td>
+        </tr>
+        <tr>
+            <td><n2>Biblioteca uno<n2></td><td><v2>Via</v2></td><td><p2></p2></td>
+        </tr>
+        <tr>
+            <td><n3>Biblioteca uno<n3></td><td><v3>Via</v3></td><td><p3></p3></td>
+        </tr>
+        <tr>
+            <td><n4>Biblioteca uno<n4></td><td><v4>Via</v4></td><td><p4></p4></td>
+        </tr>
+        <tr>
+            <td><n5>Biblioteca uno<n5></td><td><v5>Via</v5></td><td><p5></p5></td>
+        </tr>
+	</table>
+    <div></div>
 </body>
 
 </html>
