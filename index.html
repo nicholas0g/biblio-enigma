@@ -38,7 +38,7 @@
 <body>
     <script>
     $(function(){ //JQery imprementa questo metodo come document.ready()
-        $.getJSON("https://localhost:8081/listaBiblioteche", function(result){
+         $.getJSON("http://localhost:8081/1", function(result){
         $.each(result, function(i, field){
             $("div").append(field + " ");
         });
