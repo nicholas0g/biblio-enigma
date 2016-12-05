@@ -58,6 +58,13 @@
          $("n5").append(result.nome);
          $("v5").append(result.edificio);
     });
+    $.getJSON("http://localhost:8081/postiOccupati", function(result){
+         $("p1").append(result[1]);
+         $("p2").append(result[2]);
+         $("p3").append(result[3]);
+         $("p4").append(result[4]);
+         $("p5").append(result[5]);
+    });
     });
     </script>
 	<table>
