@@ -38,28 +38,43 @@
 <body>
     <script>
     $(function(){ //JQery imprementa questo metodo come document.ready()
-         $.getJSON("http://localhost:8081/1", function(result){
-        $.each(result, function(i, field){
-            $("div").append(field + " ");
-        });
+    $.getJSON("http://localhost:8081/1", function(result){
+         $("n1").append(result.nome);
+         $("v1").append(result.edificio);
+    });
+    $.getJSON("http://localhost:8081/2", function(result){
+         $("n2").append(result.nome);
+         $("v2").append(result.edificio);
+    });
+    $.getJSON("http://localhost:8081/3", function(result){
+         $("n3").append(result.nome);
+         $("v3").append(result.edificio);
+    });
+    $.getJSON("http://localhost:8081/4", function(result){
+         $("n4").append(result.nome);
+         $("v4").append(result.edificio);
+    });
+     $.getJSON("http://localhost:8081/5", function(result){
+         $("n5").append(result.nome);
+         $("v5").append(result.edificio);
     });
     });
     </script>
 	<table>
         <tr>
-            <td><n1>Biblioteca uno<n1></td><td><v1>Via</v1></td><td><p1></p1></td>
+            <td><n1></td><td><v1></td><td><p1></td>
         </tr>
         <tr>
-            <td><n2>Biblioteca uno<n2></td><td><v2>Via</v2></td><td><p2></p2></td>
+            <td><n2></td><td><v2></td><td><p2></td>
         </tr>
         <tr>
-            <td><n3>Biblioteca uno<n3></td><td><v3>Via</v3></td><td><p3></p3></td>
+            <td><n3></td><td><v3></td><td><p3></td>
         </tr>
         <tr>
-            <td><n4>Biblioteca uno<n4></td><td><v4>Via</v4></td><td><p4></p4></td>
+            <td><n4></td><td><v4></td><td><p4></td>
         </tr>
         <tr>
-            <td><n5>Biblioteca uno<n5></td><td><v5>Via</v5></td><td><p5></p5></td>
+            <td><n5></td><td><v5></td><td><p5></td>
         </tr>
 	</table>
     <div></div>
