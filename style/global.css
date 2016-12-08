@@ -14,22 +14,51 @@ body {
       width: 50%;
       margin: 0 auto;
   }
+h2 {
+      color: black;
+      text-align: center;
+      font-family: serif;
+      font-size: 150%;
+      background-color: white;
+      width: 50%;
+      margin: 0 auto;
+  }
+/*Sottotitoli*/
+h3 {
+    color: black;
+    text-align: left;;
+    font-family: serif;
+    font-size: 110%;
+    background-color: white;
+    margin: 0 auto;
+    }
 
 /*riquadro bianco entro il quale mettere il testo*/
 div {
 
       background-color: white;
-      width: 50%;
+      width: 80%;
       margin: 0 auto;
     }
 
 
 /*Paragrafi*/
-p {
+p1 {
     text-align: center;
     font-family: arial;
-    font-size: 100%;
+    font-size: 80%;
     color:white;
+}
+p2 {
+
+    text-align:justify;
+    font-family: arial;
+    font-size: 80%;
+    color:black;
+}
+p3{
+  font-style: oblique;
+  font-weight: bold;
 }
 /*celle di tabella*/
 td {
