@@ -51,28 +51,14 @@ p1 {
 }
 p2 {
 
-    text-align: center;
+    text-align:justify;
     font-family: arial;
     font-size: 80%;
-    color:white;
+    color:black;
 }
 p3{
-	text-align: center;
-    font-family: arial;
-    font-size: 80%;
-    color:white;
-}
-p4{
-	text-align: center;
-    font-family: arial;
-    font-size: 80%;
-    color:white;
-}
-p5{
-	text-align: center;
-    font-family: arial;
-    font-size: 80%;
-    color:white;
+  font-style: oblique;
+  font-weight: bold;
 }
 /*celle di tabella*/
 td {
