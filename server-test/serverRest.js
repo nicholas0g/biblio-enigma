@@ -39,7 +39,7 @@ app.get('/:id', function (req, res,next) {
 app.post('/studenteIn/:id',function(req,res){
     fs.readFile( __dirname + "/" + "biblioteche.json", 'utf8', function (err, data) {
        biblioteche = JSON.parse( data );
-       var residui = biblioteche["biblioteca" + req.params.id]['postazioni-studio'];
+       var residui = biblioteche["biblioteca" + req.params.id]['postazioni'];
         console.log("Studente in ingresso sulla biblioteca %s",req.params.id)
         if(posti[req.params.id]<residui){
             posti[req.params.id]=posti[req.params.id]+1;
@@ -52,7 +52,7 @@ app.post('/studenteIn/:id',function(req,res){
 app.post('/studenteOut/:id',function(req,res){
     fs.readFile( __dirname + "/" + "biblioteche.json", 'utf8', function (err, data) {
        biblioteche = JSON.parse( data );
-       var residui = biblioteche["biblioteca" + req.params.id]['postazioni-studio'];
+       var residui = biblioteche["biblioteca" + req.params.id]['postazioni'];
         console.log("Studente in uscita sulla biblioteca %s",req.params.id)
         if(posti[req.params.id]>0){
             posti[req.params.id]=posti[req.params.id]-1;

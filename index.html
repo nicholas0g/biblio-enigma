@@ -27,7 +27,7 @@
 
 <head>
 	<title>Biblio Enigma</title>
-    <link href="style/global.css" rel="stylesheet" type="text/css">
+    <link href="style/home.css" rel="stylesheet" type="text/css">
     <script src="js/jquery-3.1.1.min.js"></script> 
     <!--
         non viene specificato il tipo di script, in HTML5 javascript è il
@@ -41,22 +41,34 @@
     $.getJSON("http://localhost:8081/1", function(result){
          $("n1").append(result.nome);
          $("v1").append(result.edificio);
+         $("nol1").append(result.noleggio);
+         $("h241").append(result.h24);
+         $("pc1").append(result.pc);
+         $("posti1").append(result.postazioni);
     });
     $.getJSON("http://localhost:8081/2", function(result){
          $("n2").append(result.nome);
          $("v2").append(result.edificio);
+         $("nol2").append(result.noleggio);
+         $("h242").append(result.h24);
+         $("pc2").append(result.pc);
+         $("posti2").append(result.postazioni);
     });
     $.getJSON("http://localhost:8081/3", function(result){
          $("n3").append(result.nome);
          $("v3").append(result.edificio);
+         $("nol3").append(result.noleggio);
+         $("h243").append(result.h24);
+         $("pc3").append(result.pc);
+         $("posti3").append(result.postazioni);
     });
     $.getJSON("http://localhost:8081/4", function(result){
          $("n4").append(result.nome);
          $("v4").append(result.edificio);
-    });
-     $.getJSON("http://localhost:8081/5", function(result){
-         $("n5").append(result.nome);
-         $("v5").append(result.edificio);
+         $("nol4").append(result.noleggio);
+         $("h244").append(result.h24);
+         $("pc4").append(result.pc);
+         $("posti4").append(result.postazioni);
     });
     $.getJSON("http://localhost:8081/postiOccupati", function(result){
          $("o1").append(result[1]);
@@ -67,24 +79,56 @@
     });
     });
     </script>
-	<table>
-        <tr>
-            <td><n1></td><td><v1></td><td><o1></td>
-        </tr>
-        <tr>
-            <td><n2></td><td><v2></td><td><o2></td>
-        </tr>
-        <tr>
-            <td><n3></td><td><v3></td><td><o3></td>
-        </tr>
-        <tr>
-            <td><n4></td><td><v4></td><td><o4></td>
-        </tr>
-        <tr>
-            <td><n5></td><td><v5></td><td><o5></td>
-        </tr>
-	</table>
-    <div></div>
+<div id="biblioteca-table" class="clear">
+    <div class="singola">
+        <h3>Biblioteca Di Geologia<span><o1></span></h3>
+        <a class="info" href="">Info</a>         
+        <ul>
+            <li><b><v1></b></li>
+            <li><b><posti1></b> Posti Totali</li>
+            <li><b><pc1></b> Postazioni PC</li>
+            <li>H24:<b><h241></b></li>
+			<li>Noleggio:<b><nol1></b>
+            </li>			
+        </ul> 
+    </div>
+    <div class="singola">
+        <h3>Biblioteca Di Chimica<span><o2></span></h3>
+        <a class="info" href="">Info</a>         
+        <ul>
+            <li><b><v2></b></li>
+            <li><b><posti2></b> Posti Totali</li>
+            <li><b><pc2></b> Postazioni PC</li>
+            <li>H24:<b><h242></b></li>
+			<li>Noleggio:<b><nol2></b>
+            </li>			
+        </ul> 
+    </div>
+    <div class="singola">
+        <h3>Biblioteca Alesandrina<span><o3></span></h3>
+        <a class="info" href="">Info</a>         
+        <ul>
+            <li><b><v3></b></li>
+            <li><b><posti3></b> Posti Totali</li>
+            <li><b><pc3></b> Postazioni PC</li>
+            <li>H24:<b><h243></b></li>
+			<li>Noleggio:<b><nol3></b>
+            </li>			
+        </ul> 
+    </div>
+    <div class="singola">
+        <h3>Biblioteca Di Fisica<span><o4></span></h3>
+        <a class="info" href="">Info</a>         
+        <ul>
+            <li><b><v4></b></li>
+            <li><b><posti4></b> Posti Totali</li>
+            <li><b><pc4></b> Postazioni PC</li>
+            <li>H24:<b><h244></b></li>
+			<li>Noleggio:<b><nol4></b>
+            </li>			
+        </ul> 
+    </div>
+</div>
 </body>
 
 </html>

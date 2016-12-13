@@ -2,51 +2,41 @@
    "biblioteca1" : {
     "nome":"biblioteca di geologia",
     "id":1,
-    "edificio" : "Geologia, piano terreno",
-	  "wifi" : "true",
-	  "postazioni-pc" : 10,
-	  "postazioni-studio": 200,
-    "noleggio" : "true",
-    "h24" : "true"
+    "edificio" : "Geologia piano terreno",
+	  "wifi" : "SI",
+	  "pc" : 10,
+	  "postazioni": 200,
+    "noleggio" : "SI",
+    "h24" : "SI"
    },
    "biblioteca2" : {
 	   "nome":"biblioteca di chimica",
     "id":2,
     "edificio" : "Chimica quarto piano",
-	  "wifi" : "true",
-	  "postazioni-pc" : 0,
-	  "postazioni-studio": 30,
-    "noleggio" : "false",
-    "h24" : "false"
+	  "wifi" : "SI",
+	  "pc" : 0,
+	  "postazioni": 30,
+    "noleggio" : "NO",
+    "h24" : "NO"
    },
    "biblioteca3" : {
 	   "nome":"biblioteca alessandrina",
     "id":3,
     "edificio" : "Rettorato",
-	  "wifi" : "true",
-	  "postazioni-pc" : 7,
-	  "postazioni-studio": 120,
-    "noleggio" : "true",
-    "h24" : "false"
+	  "wifi" : "SI",
+	  "pc" : 7,
+	  "postazioni": 120,
+    "noleggio" : "SI",
+    "h24" : "NO"
    },
    "biblioteca4" : {
-	   "nome":"biblioteca di giurisprudenza",
-    "id":4,
-    "edificio" : "Giurisprudenza terzo piano",
-	  "wifi" : "true",
-	  "postazioni-pc" : 0,
-	  "postazioni-studio": 200,
-    "noleggio" : "true",
-    "h24" : "true"
-   },
-   "biblioteca5" : {
 	    "nome":"biblioteca di fisica",
-    "id":5,
-    "edificio" : "Fisica pian terreno",
-	  "wifi" : "false",
-	  "postazioni-pc" : 1,
-	  "postazioni-studio": 200,
-    "noleggio" : "true",
-    "h24" : "false"
+    "id":4,
+    "edificio" : "Fisica piano terreno",
+	  "wifi" : "NO",
+	  "pc" : 1,
+	  "postazioni": 200,
+    "noleggio" : "SI",
+    "h24" : "NO"
    }
 }
