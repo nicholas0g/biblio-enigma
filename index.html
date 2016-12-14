@@ -38,7 +38,9 @@
 <body>
     <script>
     $(function(){ //JQery imprementa questo metodo come document.ready()
-    $.getJSON("http://localhost:8081/1", function(result){
+	var url="http://localhost";
+	var port=":8081";
+    $.getJSON(url+port+"/1", function(result){
          $("n1").append(result.nome);
          $("v1").append(result.edificio);
          $("nol1").append(result.noleggio);
@@ -46,7 +48,7 @@
          $("pc1").append(result.pc);
          $("posti1").append(result.postazioni);
     });
-    $.getJSON("http://localhost:8081/2", function(result){
+    $.getJSON(url+port+"/2", function(result){
          $("n2").append(result.nome);
          $("v2").append(result.edificio);
          $("nol2").append(result.noleggio);
@@ -54,7 +56,7 @@
          $("pc2").append(result.pc);
          $("posti2").append(result.postazioni);
     });
-    $.getJSON("http://localhost:8081/3", function(result){
+    $.getJSON(url+port+"/3", function(result){
          $("n3").append(result.nome);
          $("v3").append(result.edificio);
          $("nol3").append(result.noleggio);
@@ -62,7 +64,7 @@
          $("pc3").append(result.pc);
          $("posti3").append(result.postazioni);
     });
-    $.getJSON("http://localhost:8081/4", function(result){
+    $.getJSON(url+port+"/4", function(result){
          $("n4").append(result.nome);
          $("v4").append(result.edificio);
          $("nol4").append(result.noleggio);
@@ -70,7 +72,7 @@
          $("pc4").append(result.pc);
          $("posti4").append(result.postazioni);
     });
-    $.getJSON("http://localhost:8081/postiOccupati", function(result){
+    $.getJSON(url+port+"/postiOccupati", function(result){
          $("o1").append(result[1]);
          $("o2").append(result[2]);
          $("o3").append(result[3]);
@@ -79,7 +81,8 @@
     });
     });
     </script>
-<div id="biblioteca-table" class="clear">
+    <center><img src="logo.png"></center>
+	<div id="biblioteca-table" class="clear">
     <div class="singola">
         <h3>Biblioteca Di Geologia<span><o1></span></h3>
         <a class="info" href="">Info</a>         
@@ -128,7 +131,8 @@
             </li>			
         </ul> 
     </div>
-</div>
+	</div>
+	<a id="bottone">ADMIN</a> <a id="bottone">API</a>
 </body>
 
 </html>

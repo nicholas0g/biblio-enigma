@@ -2,9 +2,9 @@ body {
     background-color: rgb(128,35,50);
   }
 #biblioteca-table {
-	margin: 100px auto;
+	margin: 2px auto;
 	text-align: center;
-	width: 892px; /* total computed width = 222 x 3 + 226 */
+	width: 892px;
 }
 
 #biblioteca-table .singola {
@@ -14,7 +14,7 @@ body {
 	border: 1px solid #ddd;
 	color: #333;
 	padding: 20px;
-	width: 180px; /* singola width = 180 + 20 + 20 + 1 + 1 = 222px */      
+	width: 180px;      
 	float: left;
 	position: relative;
 }
@@ -123,4 +123,26 @@ body {
 
 .clear {
   zoom:1
+}
+
+#bottone {
+	position: relative;
+	padding: 8px 20px;
+	margin: 10px 0 0 0;  
+	color: #fff;
+	font: bold 14px Arial, Helvetica;
+	text-transform: uppercase;
+	text-decoration: none;
+	display: inline-block;       
+	background-color: rgb(128,35,50);
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	border-radius: 3px;     
+	text-shadow: 0 1px 0 rgba(0,0,0,.3);        
+	-moz-box-shadow: 0 1px 0 rgba(255, 255, 255, .5), 0 2px 0 rgba(0, 0, 0, .7);
+	-webkit-box-shadow: 0 1px 0 rgba(255, 255, 255, .5), 0 2px 0 rgba(0, 0, 0, .7);
+	box-shadow: 0 1px 0 rgba(255, 255, 255, .5), 0 2px 0 rgba(0, 0, 0, .7);
+}
+#bottone:hover {
+	background-color:rgba(0, 0, 0, .7) ;
 }
