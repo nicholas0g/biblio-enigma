@@ -1,0 +1,139 @@
+<!--
+   index.html
+   
+   Copyright 2016 Nicholas <nicholas@portnik>
+   
+   This program is free software; you can redistribute it and/or modify
+   it under the terms of the GNU General Public License as published by
+   the Free Software Foundation; either version 2 of the License, or
+   (at your option) any later version.
+   
+   This program is distributed in the hope that it will be useful,
+   but WITHOUT ANY WARRANTY; without even the implied warranty of
+   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+   GNU General Public License for more details.
+   
+   You should have received a copy of the GNU General Public License
+   along with this program; if not, write to the Free Software
+   Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston,
+   MA 02110-1301, USA.
+   
+   
+-->
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+
+<head>
+	<title>Biblio Enigma</title>
+    <link href="style/home.css" rel="stylesheet" type="text/css">
+    <script src="js/jquery-3.1.1.min.js"></script> 
+    <script src="js/stuff.js"></script> 
+    <!--
+        non viene specificato il tipo di script, in HTML5 javascript è il
+        linguaggio di scripting ufficiale!
+        -->
+</head>
+
+<body>
+    <script>
+    $(function(){ //JQery imprementa questo metodo come document.ready()
+	var url="http://localhost";
+	var port=":8081";
+    $.getJSON(url+port+"/1", function(result){
+         $("n1").append(result.nome);
+         $("v1").append(result.edificio);
+         $("nol1").append(result.noleggio);
+         $("h241").append(result.h24);
+         $("pc1").append(result.pc);
+         $("posti1").append(result.postazioni);
+    });
+    $.getJSON(url+port+"/2", function(result){
+         $("n2").append(result.nome);
+         $("v2").append(result.edificio);
+         $("nol2").append(result.noleggio);
+         $("h242").append(result.h24);
+         $("pc2").append(result.pc);
+         $("posti2").append(result.postazioni);
+    });
+    $.getJSON(url+port+"/3", function(result){
+         $("n3").append(result.nome);
+         $("v3").append(result.edificio);
+         $("nol3").append(result.noleggio);
+         $("h243").append(result.h24);
+         $("pc3").append(result.pc);
+         $("posti3").append(result.postazioni);
+    });
+    $.getJSON(url+port+"/4", function(result){
+         $("n4").append(result.nome);
+         $("v4").append(result.edificio);
+         $("nol4").append(result.noleggio);
+         $("h244").append(result.h24);
+         $("pc4").append(result.pc);
+         $("posti4").append(result.postazioni);
+    });
+    $.getJSON(url+port+"/postiOccupati", function(result){
+         $("o1").append(result[1]);
+         $("o2").append(result[2]);
+         $("o3").append(result[3]);
+         $("o4").append(result[4]);
+         $("o5").append(result[5]);
+    });
+    });
+    </script>
+    <center><img src="logo.png"></center>
+	<div id="biblioteca-table" class="clear">
+    <div class="singola">
+        <h3>Biblioteca Di Geologia<span><o1></span></h3>
+        <a class="info" href="info/geologia.html">Info</a>         
+        <ul>
+            <li><b><v1></b></li>
+            <li><b><posti1></b> Posti Totali</li>
+            <li><b><pc1></b> Postazioni PC</li>
+            <li>H24:<b><h241></b></li>
+			<li>Noleggio:<b><nol1></b>
+            </li>			
+        </ul> 
+    </div>
+    <div class="singola">
+        <h3>Biblioteca Di Chimica<span><o2></span></h3>
+        <a class="info" href="info/chimica.html">Info</a>         
+        <ul>
+            <li><b><v2></b></li>
+            <li><b><posti2></b> Posti Totali</li>
+            <li><b><pc2></b> Postazioni PC</li>
+            <li>H24:<b><h242></b></li>
+			<li>Noleggio:<b><nol2></b>
+            </li>			
+        </ul> 
+    </div>
+    <div class="singola">
+        <h3>Biblioteca Alesandrina<span><o3></span></h3>
+        <a class="info" href="info/alessandrina.html">Info</a>         
+        <ul>
+            <li><b><v3></b></li>
+            <li><b><posti3></b> Posti Totali</li>
+            <li><b><pc3></b> Postazioni PC</li>
+            <li>H24:<b><h243></b></li>
+			<li>Noleggio:<b><nol3></b>
+            </li>			
+        </ul> 
+    </div>
+    <div class="singola">
+        <h3>Biblioteca Di Fisica<span><o4></span></h3>
+        <a class="info" href="info/fisica.html">Info</a>         
+        <ul>
+            <li><b><v4></b></li>
+            <li><b><posti4></b> Posti Totali</li>
+            <li><b><pc4></b> Postazioni PC</li>
+            <li>H24:<b><h244></b></li>
+			<li>Noleggio:<b><nol4></b>
+            </li>			
+        </ul> 
+    </div>
+	</div>
+	<a id="bottone" href="javascript:admin();">ADMIN</a> <a id="bottone" href="javascript:info();">API</a>
+</body>
+
+</html>

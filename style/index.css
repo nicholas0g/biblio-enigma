@@ -1,0 +1,30 @@
+body {
+    background-color: rgb(128,35,50);
+  }
+	
+a {
+	position: relative;
+	padding: 8px 20px;
+	margin: 20px 0 0 0;  
+	color: #fff;
+	font: bold 14px Arial, Helvetica;
+	text-transform: uppercase;
+	text-decoration: none;
+	display: inline-block;       
+	background-color: #000000;
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	border-radius: 3px; 
+}
+
+a:hover {
+	background-color:rgba(0, 0, 0, .7) ;
+}
+
+html, body, .parent { height: 100%}
+.child { height: 100%}
+p{
+	font-family: 'Space Mono', monospace;
+	font-size: 40px;
+	text-shadow: 4px 4px 4px #aaa;
+}
