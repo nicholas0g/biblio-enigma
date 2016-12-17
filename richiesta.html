@@ -1,1 +1,53 @@
-pagina che contiene form studenti
+<!DOCTYPE html>
+<html>
+<head>
+  <script>
+  var n =0
+  function validateForm() {
+    var x = document.forms["stat"]["nome"].value;
+    var y = "Inserisci Nome";
+    if (x == "" || x==y) {
+        alert("Perfavore inserisci il nome.");
+        return false;
+    }
+    x= document.forms["stat"]["cognome"].value;
+    y= "Inserisci Cognome";
+    if ( x == "" || x==y) {
+      alert("Perfavore inserisci il cognome.");
+      return false;
+    }
+    if(n==0){
+      alert("Perfavore seleziona almeno una biblioteca.");
+      return false;
+    }
+}
+
+function addcheck(elem) {
+  if(document.querySelectorAll("input[name='teche[]']:checked")) n++;
+  else n--;
+}
+
+</script>
+</head>
+<body>
+
+<form name="stat" action="index.html" onsubmit="return validateForm()" method="post">
+  Lo studente: <input type="text" value="Inserisci Nome" name="nome"><input type="text" value="Inserisci Cognome" name="cognome">,<br>
+  Dichiara secondo i sensi di norma della legge vigente, di essere studente della Università
+  <select name="uni">
+      <option value="uniroma1">La Sapienza</option>
+      <option value="uniroma2">Tor Vergata</option>
+      <option value="uniroma3">San Paolo</option>
+    </select> avente numero di matricola:
+  <input type="number" name="matricola"  min="0000000" max="9999999">
+   e richide una copia dei dati stastici delle biblioteche delle seguenti facoltà:<br>
+    <input type="checkbox" id="1" name="teche[]" value="Geologia" onclick="addcheck(this)">Geologia
+    <input type="checkbox" id="2" name="teche[]" value="Chimica" onclick="addcheck(this)">Chimica <br>
+    <input type="checkbox" id="3" name="teche[]" value="Alessandrina" onclick="addcheck(this)">Rettorato (Alessandrina)
+    <input type="checkbox" id="4" name="teche[]" value="Fisica" onclick="addcheck(this)">Fisica <br>
+  <br>
+  I suddetti dati verranno inviati esclusivamente all'indirizzo istituzionale: <input type="email" name="email" value="Email istituzionale"><br>
+  <input type="submit" value="Invio"><input type="reset">
+</form>
+</body>
+</html>
