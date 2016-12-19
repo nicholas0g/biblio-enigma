@@ -6,58 +6,50 @@ body {
   }
 /*Titolo*/
   h1 {
-      color: white;
-      text-align: center;
-      font-family: arial;
-      font-size: 120%;
-      background-color: white;
-      width: 50%;
-      margin: 0 auto;
+    color: black;
+    text-align: center;
+    font: bold 25px/100px Georgia, Serif;
+    font-size: 150%;
+    width: 50%;
   }
-h2 {
+  h2 {
       color: black;
       text-align: center;
-      font-family: serif;
+      font: bold 25px/100px Georgia, Serif;
       font-size: 150%;
-      background-color: white;
       width: 50%;
       margin: 0 auto;
   }
 /*Sottotitoli*/
-h3 {
+  h3 {
     color: black;
-    text-align: left;;
-    font-family: serif;
+  	font: Arial, Helvetica;
     font-size: 110%;
-    background-color: white;
     margin: 0 auto;
     }
 
-/*riquadro bianco entro il quale mettere il testo*/
+/*riquadro bianco*/
 div {
-
       background-color: white;
       width: 80%;
       margin: 0 auto;
     }
 
-
 /*Paragrafi*/
 p1 {
-    text-align: center;
-    font-family: arial;
-    font-size: 80%;
-    color:white;
-}
-p2 {
-
-    text-align:justify;
-    font-family: arial;
-    font-size: 80%;
+    text-align: left justify;
+    font: Arial, Helvetica;
+    font-size: 100%;
     color:black;
 }
+p2 {
+    text-align: left justify;
+    font: Arial, Helvetica;
+    font-size:90%;
+    color:black;
+  }
 p3{
-  font-style: oblique;
+
   font-weight: bold;
 }
 /*celle di tabella*/
