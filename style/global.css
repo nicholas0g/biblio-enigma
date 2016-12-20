@@ -7,24 +7,22 @@ body {
 /*Titolo*/
   h1 {
     color: black;
-    text-align: center;
-    font: bold 25px/100px Georgia, Serif;
-    font-size: 150%;
-    width: 50%;
+    text-align: left;
+    font: bold 40px/100px Georgia, Serif;
   }
   h2 {
       color: black;
       text-align: center;
       font: bold 25px/100px Georgia, Serif;
-      font-size: 150%;
+
       width: 50%;
       margin: 0 auto;
   }
 /*Sottotitoli*/
   h3 {
     color: black;
-  	font: Arial, Helvetica;
-    font-size: 110%;
+  	font: Georgia, Serif;
+    font-size: 107%;
     margin: 0 auto;
     }
 
@@ -45,7 +43,7 @@ p1 {
 p2 {
     text-align: left justify;
     font: Arial, Helvetica;
-    font-size:90%;
+    font-size:102%;
     color:black;
   }
 p3{
