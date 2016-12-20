@@ -24,13 +24,15 @@ function addcheck(elem) {
   if(document.querySelectorAll("input[name='teche[]']:checked")) n++;
   else n--;
 }
-
 </script>
+<link href="https://fonts.googleapis.com/css?family=Space+Mono" rel="stylesheet">
+<link href="style/global.css" rel="stylesheet" type="text/css">
+
 </head>
 <body>
-
+<div>
 <form name="stat" action="index.html" onsubmit="return validateForm()" method="post">
-  Lo studente: <input type="text" placeholder="Nome" name="nome"><input type="text" placeholder="Cognome" name="cognome">,<br>
+  Lo studente: <input type="text" placeholder="Nome" name="nome"><input type="text" placeholder="Cognome" name="cognome">,
   Dichiara secondo i sensi di norma della legge vigente, di essere studente della Università
   <select name="uni">
       <option value="uniroma1">La Sapienza</option>
@@ -47,5 +49,6 @@ function addcheck(elem) {
   I suddetti dati verranno inviati esclusivamente all'indirizzo istituzionale: <input type="email" name="email" placeholder="email istituzionale"><br>
   <input type="submit" value="Invio"><input type="reset">
 </form>
+</div>
 </body>
 </html>

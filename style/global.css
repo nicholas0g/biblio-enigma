@@ -1,14 +1,13 @@
 /* Questo file contiene gli stili grafici generali del sito */
-/*va finito*/
 /*Body*/
 body {
     background-color: rgb(128,35,50);
   }
 /*Titolo*/
   h1 {
-    color: black;
-    text-align: left;
-    font: bold 40px/100px Georgia, Serif;
+    font-family: 'Space Mono', monospace;
+    font-size: 35px;
+	  text-align: center;
   }
   h2 {
       color: black;
