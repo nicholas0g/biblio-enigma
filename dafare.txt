@@ -1,9 +1,0 @@
-1) possibilità prenotazione posto
-
-2) funzione che gestisce il resize della pagina map.html
-
-3) mettere meglio il titolo delle pagine info
-
-4) aggiungere icona
-
-5) revisione generale
