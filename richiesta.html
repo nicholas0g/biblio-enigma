@@ -14,16 +14,17 @@
       alert("Perfavore inserisci il cognome.");
       return false;
     }
+//    alert("n= "+n)
     if(n==0){
       alert("Perfavore seleziona almeno una biblioteca.");
       return false;
     }
 }
 
-function addcheck(elem) {
-  if(document.querySelectorAll("input[name='teche[]']:checked")) n++;
-  else n--;
-}
+function globcheck(elem) {
+     if(elem.checked) n++;
+     else n--;
+      };
 </script>
 <link href="https://fonts.googleapis.com/css?family=Space+Mono" rel="stylesheet">
 <link href="style/global.css" rel="stylesheet" type="text/css">
@@ -41,10 +42,10 @@ function addcheck(elem) {
     </select> avente numero di matricola:
   <input type="number" name="matricola"  min="0000000" max="9999999">
    e richide una copia dei dati stastici delle biblioteche delle seguenti facoltà:<br>
-    <input type="checkbox" id="1" name="teche[]" value="Geologia" onclick="addcheck(this)">Geologia
-    <input type="checkbox" id="2" name="teche[]" value="Chimica" onclick="addcheck(this)">Chimica <br>
-    <input type="checkbox" id="3" name="teche[]" value="Alessandrina" onclick="addcheck(this)">Rettorato (Alessandrina)
-    <input type="checkbox" id="4" name="teche[]" value="Fisica" onclick="addcheck(this)">Fisica <br>
+    <input type="checkbox" id="1" name="teche[]" value="true" onclick="globcheck(this)">Geologia
+    <input type="checkbox" id="2" name="teche[]" value="true" onclick="globcheck(this)">Chimica <br>
+    <input type="checkbox" id="3" name="teche[]" value="true" onclick="globcheck(this)">Rettorato (Alessandrina)
+    <input type="checkbox" id="4" name="teche[]" value="true" onclick="globcheck(this)">Fisica <br>
   <br>
   I suddetti dati verranno inviati esclusivamente all'indirizzo istituzionale: <input type="email" name="email" placeholder="email istituzionale"><br>
   <input type="submit" value="Invio"><input type="reset">
