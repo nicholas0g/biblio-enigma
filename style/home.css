@@ -20,17 +20,7 @@ body {
 }
 
 
-#biblioteca-table .singola:nth-child(1) {
-	-moz-border-radius: 5px 0 0 5px;
-	-webkit-border-radius: 5px 0 0 5px;
-	border-radius: 5px 0 0 5px;        
-}
 
-#biblioteca-table .singola:nth-child(4) {
-	-moz-border-radius: 0 5px 5px 0;
-	-webkit-border-radius: 0 5px 5px 0;
-	border-radius: 0 5px 5px 0;        
-}
 
 
 #biblioteca-table h3 {
@@ -46,18 +36,6 @@ body {
 	background-image: -ms-linear-gradient(#fff, #eee);
 	background-image: linear-gradient(#fff, #eee);
 }
-
-#biblioteca-table .singola:nth-child(1) h3 {
-	-moz-border-radius: 5px 0 0 0;
-	-webkit-border-radius: 5px 0 0 0;
-	border-radius: 5px 0 0 0;       
-}
-
-#biblioteca-table .singola:nth-child(4) h3 {
-	-moz-border-radius: 0 5px 0 0;
-	-webkit-border-radius: 0 5px 0 0;
-	border-radius: 0 5px 0 0;       
-}	
 
 #biblioteca-table h3 span {
 	display: block;
