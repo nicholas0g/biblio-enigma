@@ -30,6 +30,10 @@ function globcheck(elem) {
 <link href="style/global.css" rel="stylesheet" type="text/css">
 
 </head>
+
+<header>
+  <img src="info/img/sapienza.png" alt="Logo sapienza" style="margin-left: 10%">
+</header>
 <body>
 <div>
 <form name="stat" action="index.html" onsubmit="return validateForm()" method="post">
@@ -40,14 +44,14 @@ function globcheck(elem) {
       <option value="uniroma2">Tor Vergata</option>
       <option value="uniroma3">San Paolo</option>
     </select> avente numero di matricola:
-  <input type="number" name="matricola"  min="0000000" max="9999999">
+  <input type="number" name="matricola"  min="0000000" max="9999999" required>
    e richide una copia dei dati stastici delle biblioteche delle seguenti facoltà:<br>
     <input type="checkbox" id="1" name="teche[]" value="true" onclick="globcheck(this)">Geologia
     <input type="checkbox" id="2" name="teche[]" value="true" onclick="globcheck(this)">Chimica <br>
     <input type="checkbox" id="3" name="teche[]" value="true" onclick="globcheck(this)">Rettorato (Alessandrina)
     <input type="checkbox" id="4" name="teche[]" value="true" onclick="globcheck(this)">Fisica <br>
   <br>
-  I suddetti dati verranno inviati esclusivamente all'indirizzo istituzionale: <input type="email" name="email" placeholder="email istituzionale"><br>
+  I suddetti dati verranno inviati esclusivamente all'indirizzo istituzionale: <input type="email" name="email" placeholder="email istituzionale" required><br>
   <input type="submit" value="Invio"><input type="reset">
 </form>
 </div>
