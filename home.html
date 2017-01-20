@@ -16,8 +16,8 @@
 <body>
     <script>
     $(function(){ //JQery imprementa questo metodo come document.ready()
-	var url="http://localhost";
-	var port=":8081";
+	var url="http://demo.nicholasgiordano.it";
+	var port=":3000";
     $.getJSON(url+port+"/1", function(result){
          $("v1").append(result.edificio);
          $("nol1").append(result.noleggio);
