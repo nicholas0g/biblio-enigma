@@ -4,10 +4,11 @@
 
 <head>
 	<title>Biblio Enigma</title>
-
+	
     <link href="style/home.css" rel="stylesheet" type="text/css">
     <script src="js/jquery-3.1.1.min.js"></script>
     <script src="js/stuff.js"></script>
+<script src="https://cdn.onesignal.com/sdks/OneSignalSDK.js" async='async'></script>
     <!--
         non viene specificato il tipo di script, in HTML5 javascript è il
         linguaggio di scripting ufficiale!
@@ -56,6 +57,20 @@
     });
     });
     </script>
+	 <script>
+    var OneSignal = window.OneSignal || [];
+    OneSignal.push(["init", {
+      appId: "0a8fd04f-002e-46d4-9b00-1f207ec65e78",
+      autoRegister: false,
+      subdomainName: 'biblio-enigma',
+      httpPermissionRequest: {
+        enable: true
+      },
+      notifyButton: {
+          enable: true /* Set to false to hide */
+      }
+    }]);
+  </script>
     <center><img src="logo.png"></center>
 	<div id="biblioteca-table" class="clear">
     <div class="singola">
