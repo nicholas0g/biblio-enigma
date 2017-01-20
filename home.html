@@ -4,6 +4,25 @@
 
 <head>
 	<title>Biblio Enigma</title>
+	<script src="https://cdn.onesignal.com/sdks/OneSignalSDK.js" async='async'></$
+  <script>
+    var OneSignal = window.OneSignal || [];
+    OneSignal.push(["init", {
+      appId: "0a8fd04f-002e-46d4-9b00-1f207ec65e78",
+      autoRegister: false, /* Set to true to automatically prompt visitors */
+      subdomainName: 'biblio-enigma',
+      /*
+      subdomainName: Use the value you entered in step 1.4: http://imgur.com/a/$
+      */
+      httpPermissionRequest: {
+        enable: true
+      },
+      notifyButton: {
+          enable: true /* Set to false to hide */
+      }
+    }]);
+  </script>
+
     <link href="style/home.css" rel="stylesheet" type="text/css">
     <script src="js/jquery-3.1.1.min.js"></script>
     <script src="js/stuff.js"></script>
