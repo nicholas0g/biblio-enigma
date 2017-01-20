@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="it">
 <head>
+<script src="https://cdn.onesignal.com/sdks/OneSignalSDK.js" async='async'></script>
 <link href="https://fonts.googleapis.com/css?family=Space+Mono" rel="stylesheet">
 <link href="style/index.css" rel="stylesheet">
 <meta charset="utf-8" />
@@ -9,6 +10,20 @@
 <script src="js/stuff.js"></script>
 </head>
 <body>
+<script>
+    var OneSignal = window.OneSignal || [];
+    OneSignal.push(["init", {
+      appId: "0a8fd04f-002e-46d4-9b00-1f207ec65e78",
+      autoRegister: true,
+      subdomainName: 'biblio-enigma',
+      httpPermissionRequest: {
+        enable: true
+      },
+      notifyButton: {
+          enable: true
+      }
+    }]);
+  </script>
 <div class="parent">
 <div class="child">
 <table style="width:100%; height:100%;">
