@@ -18,35 +18,35 @@
     $(function(){ //JQery imprementa questo metodo come document.ready()
 	var url="http://demo.nicholasgiordano.it";
 	var port=":3000";
-    $.getJSON(url+port+"/1", function(result){
+    $.getJSON(url+port+"/api/1", function(result){
          $("v1").append(result.edificio);
          $("nol1").append(result.noleggio);
          $("h241").append(result.h24);
          $("pc1").append(result.pc);
          $("posti1").append(result.postazioni);
     });
-    $.getJSON(url+port+"/2", function(result){
+    $.getJSON(url+port+"/api/2", function(result){
          $("v2").append(result.edificio);
          $("nol2").append(result.noleggio);
          $("h242").append(result.h24);
          $("pc2").append(result.pc);
          $("posti2").append(result.postazioni);
     });
-    $.getJSON(url+port+"/3", function(result){
+    $.getJSON(url+port+"/api/3", function(result){
          $("v3").append(result.edificio);
          $("nol3").append(result.noleggio);
          $("h243").append(result.h24);
          $("pc3").append(result.pc);
          $("posti3").append(result.postazioni);
     });
-    $.getJSON(url+port+"/4", function(result){
+    $.getJSON(url+port+"/api/4", function(result){
          $("v4").append(result.edificio);
          $("nol4").append(result.noleggio);
          $("h244").append(result.h24);
          $("pc4").append(result.pc);
          $("posti4").append(result.postazioni);
     });
-    $.getJSON(url+port+"/postiOccupati", function(result){
+    $.getJSON(url+port+"/api/postiOccupati", function(result){
          $("o1").append(result[1]);
          $("o2").append(result[2]);
          $("o3").append(result[3]);
